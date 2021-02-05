@@ -83,6 +83,12 @@ function App() {
     e.preventDefault();
     searchUser();
   };
+  const resetCommentFeed = () => {
+    axios.post("http://localhost:3001/api/reset-comments").then((res) => {
+      console.log(res);
+    });
+    alert("Database Reseted");
+  };
   return (
     <div>
       <h2 className="center">Get, Post, Delete, Search</h2>
@@ -200,6 +206,11 @@ function App() {
               </div>
             </div>
           </form>
+        </div>
+        <div className="center" style={{ paddingTop: "10px" }}>
+          <button onClick={resetCommentFeed} className="btn btn-danger">
+            Reset Comments
+          </button>
         </div>
       </div>
     </div>
