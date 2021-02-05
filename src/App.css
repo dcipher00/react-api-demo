@@ -1,0 +1,16 @@
+.box-container{
+    margin: auto;
+    margin-top: 50px;
+    width: 75%;
+    border: 3px solid green;
+    color:white;
+    padding: 50px;
+}
+li{
+    color: black;
+}
+.center {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
